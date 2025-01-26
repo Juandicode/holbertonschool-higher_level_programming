@@ -9,4 +9,3 @@ def safe_print_list(my_list=[], x=0):
         pass
     print("")  # Para añadir un salto de línea después de imprimir la lista
     return count
-

@@ -7,5 +7,5 @@ def safe_print_list_integers(my_list=[], x=0):
             count += 1
         except (ValueError, TypeError):
             pass
-    print("")  # Añade un salto de línea al final
+    print("")  # Imprime un salto de línea
     return count

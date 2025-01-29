@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 import random
-import string
 
 
-myList = ["letras", "simbolos", "numeros"]
+letra = int (input("ingrese la cantidad de letras\n"))
+simbolo = int (input("ingrese la cantidad de simbolos\n"))
+numero = int (input("ingrese la cantidad de numeros\n"))
 
-    length = int(input("¿Cuántos caracteres debe tener la contrase�"))
-    character_pool = ""
+
+contraseña = ""
+for i in range (letra):
+
 

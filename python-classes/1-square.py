@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Module that defines a Square class."""  # ← Agregar esta docstring de módulo
+"""Module that defines a Square class."""
+
 
 class Square:
     """Define a square."""

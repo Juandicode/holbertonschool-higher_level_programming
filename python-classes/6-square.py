@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a class Square"""
 
+
 class Square:
     """Represents un cuadrado"""
     
@@ -22,12 +23,12 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
+
     @property
     def position(self):
         """Retrieve position"""
         return self.__position
-    
+
     @position.setter
     def position(self, value):
         """Set position with validation"""
@@ -39,13 +40,13 @@ class Square:
     def area(self):
         """Return area of the square"""
         return self.__size ** 2
-    
+
     def my_print(self):
         """Print the square using '#' character"""
         if self.__size == 0:
             print()
             return
-        
+
         print("\n" * self.__position[1], end="")
         for _ in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a Rectangle class with private attributes width and height."""
 
+
 class Rectangle:
     """Represent a rectangle."""
 
@@ -39,3 +40,4 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+        

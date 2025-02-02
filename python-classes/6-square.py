@@ -4,7 +4,7 @@
 
 class Square:
     """Represents un cuadrado"""
-    
+
     def __init__(self, size=0, position=(0, 0)):
         """Inicializo a square with size and position"""
         self.size = size
@@ -36,7 +36,7 @@ class Square:
                 not all(isinstance(num, int) and num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
-    
+
     def area(self):
         """Return area of the square"""
         return self.__size ** 2

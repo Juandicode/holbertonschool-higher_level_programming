@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-"""Module that defines a Square class."""
+"""modulo q define la clase cuaudrado."""
 
 
 class Square:
-    """Define a square."""
+    """la class square define un cuadrado."""
 
     def __init__(self, size):
-        """Initialize a square with a given size.
+        """inicializo un cuadrado con un tamaño.
 
         Args:
-            size: The size of the square."""
+            size: el tamaño de la clase."""
         self.__size = size

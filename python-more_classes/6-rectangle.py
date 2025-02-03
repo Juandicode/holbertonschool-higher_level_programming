@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a Rectangle class with instance counter."""
 
+
 class Rectangle:
     """Represent a rectangle."""
     number_of_instances = 0

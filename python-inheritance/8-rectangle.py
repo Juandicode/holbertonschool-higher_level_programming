@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
 #!/usr/bin/python3
+"""
+This module defines the Rectangle class, which inherits from BaseGeometry.
+"""
 
 class BaseGeometry:
     """Base class with basic geometric validations."""
@@ -29,4 +32,3 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         """Return the area of the rectangle."""
-        return self.__width * self.__height

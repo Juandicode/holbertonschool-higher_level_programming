@@ -1,6 +1,16 @@
 #!/usr/bin/python3
 
-from 7-base_geometry import BaseGeometry
+#!/usr/bin/python3
+
+class BaseGeometry:
+    """Base class with basic geometric validations."""
+    
+    def integer_validator(self, name, value):
+        """Validate that 'value' is a positive integer."""
+        if type(value) is not int:
+            raise TypeError(f"{name} must be an integer")
+        if value <= 0:
+            raise ValueError(f"{name} must be greater than 0")
 
 class Rectangle(BaseGeometry):
     """Represents a rectangle, inheriting from BaseGeometry."""

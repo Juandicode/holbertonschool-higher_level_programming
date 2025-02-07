@@ -1,9 +1,9 @@
-#!/usr/bin/python3
 
 #!/usr/bin/python3
 """
 This module defines the Rectangle class, which inherits from BaseGeometry.
 """
+
 
 class BaseGeometry:
     """Base class with basic geometric validations."""
@@ -15,7 +15,7 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
 
-class Rectangle(BaseGeometry):
+class Rectangle(BaseGeometry):  # <--- HERENCIA CORRECTA
     """Represents a rectangle, inheriting from BaseGeometry."""
 
     def __init__(self, width, height):
@@ -32,3 +32,4 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         """Return the area of the rectangle."""
+        return self.__width * self.__height

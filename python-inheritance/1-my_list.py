@@ -1,7 +1,7 @@
-#!/usr/bin/python3
-
 class MyList(list):
-    def print_sorted(self):
-        # Create a sorted version of the list and print it
-        sorted_list = sorted(self)
-        print(sorted_list)
+    """Clase que hereda de list y proporciona un método para imprimir la lista ordenada."""
+    
+    
+	def print_sorted(self):
+        """Imprime la lista en orden ascendente."""
+        print(sorted(self))

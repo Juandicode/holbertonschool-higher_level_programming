@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-
+"""
+Module for MyList class.
+"""
 
 class MyList(list):
-    """Clase que hereda de list y proporciona un método para imprimir la lista ordenada."""
-    
+    """
+    MyList class that inherits from list.
+    """
+
     def print_sorted(self):
-        """Imprime la lista en orden ascendente."""
+        """
+        Prints the list in ascending sorted order.
+        """
         print(sorted(self))
+

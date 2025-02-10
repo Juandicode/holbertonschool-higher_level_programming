@@ -1,18 +1,36 @@
-class VerboseList(list):
-    def append(self, item):
-        print(f"Added [{item}] to the list.")
-        super().append(item)
+from abc import ABC, abstractmethod
+import math
 
-    def extend(self, items):
-        print(f"Extended the list with [{len(items)}] items.")
-        super().extend(items)
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
 
-    def remove(self, item):
-        print(f"Removed [{item}] from the list.")
-        super().remove(item)
+    @abstractmethod
+    def perimeter(self):
+        pass
 
-    def pop(self, index=-1):
-        item = self[index] if len(self) else "nothing"
-        print(f"Popped [{item}] from the list.")
-        return super().pop(index) if len(self) else None
-    
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = abs(radius)
+
+    def area(self):
+        return math.pi * self.radius ** 2
+
+    def perimeter(self):
+        return 2 * math.pi * self.radius
+
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+    def perimeter(self):
+        return 2 * (self.width + self.height)
+
+def shape_info(shape):
+    print(f"Area: {shape.area()}")
+    print(f"Perimeter: {shape.perimeter()}")

@@ -4,8 +4,9 @@
 
 def read_file(filename=""):
     """Lee un archivo de texto (UTF-8) y lo imprime en stdout."""
-    
-    # Usamos 'with' para abrir el archivo en modo lectura ('r') con codificación UTF-8
+
+    """ Usamos 'with' para abrir el archivo
+    en modo lectura ('r') con codificación UTF-8"""
     with open(filename, "r", encoding="utf-8") as file:
         # Leemos todo el contenido del archivo y lo imprimimos
         # Usamos 'end=""' para evitar agregar una nueva línea extra al final

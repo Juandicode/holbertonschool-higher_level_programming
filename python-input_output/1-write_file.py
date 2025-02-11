@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Este módulo contiene la función write_file que escribe un texto en un archivo y devuelve el número de caracteres escritos."""
+
 
 def write_file(filename="", text=""):
     """Escribe un texto en un archivo y devuelve el número de caracteres escritos."""

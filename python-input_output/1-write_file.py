@@ -10,5 +10,6 @@ def write_file(filename="", text=""):
     en modo escribir (write) ('w') con codificación UTF-8 """
     with open(filename, "w", encoding="utf-8") as file:
 
-        chars_written = file.write(text)  # Escribe el texto en el archivo y obtiene el número de caracteres escritos
+        chars_written = file.write(text)  # Escribe el texto en el
+       # archivo y obtiene el número de caracteres escritos
     return chars_written  # Devuelve el número de caracteres escritos

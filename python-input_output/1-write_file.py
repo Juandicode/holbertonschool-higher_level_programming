@@ -7,7 +7,7 @@ def write_file(filename="", text=""):
     """Escribe un texto en un archivo y
     devuelve el número de caracteres escritos."""
 
-    """ Abrimos el archivo en modo de escritura ('w'), 
+    """ Abrimos el archivo en modo de escritura ('w'),|
     lo que crea el archivo si no existe o lo sobrescribe si ya existe"""
     with open(filename, "w", encoding="utf-8") as file:
         chars_written = file.write(text)

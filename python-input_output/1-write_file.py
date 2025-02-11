@@ -10,5 +10,5 @@ def write_file(filename="", text=""):
     """ Abrimos el archivo en modo de escritura ('w'), 
     lo que crea el archivo si no existe o lo sobrescribe si ya existe"""
     with open(filename, "w", encoding="utf-8") as file:
-        chars_written = file.write(text)  # Escribe el texto en el archivo y obtiene el núm de caract scritos
+        chars_written = file.write(text)  # Escrib en el archiv obtien el núm de caract scritos
     return chars_written  # Devuelve el número de caracteres escritos

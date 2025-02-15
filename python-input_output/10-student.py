@@ -5,7 +5,7 @@
 
 
 class Student:
-    
+
     def __init__(self, first_name, last_name, age):
         """
         Initializes a Student instance with first_name, last_name, and age.
@@ -24,12 +24,13 @@ class Student:
         Retrieves a dictionary representation of a Student instance.
 
         Args:
-            attrs (list): A list of strings representing the 
+            attrs (list): A list of strings representing the
             attributes to include.
                           If None, all attributes are included.
 
         Returns:
-            dict: A dictionary containing the specified attributes of the student.
+            dict: A dictionary containing the specified
+            attributes of the student.
         """
         if attrs is None:
             # Return all attributes
@@ -40,5 +41,4 @@ class Student:
             }
         else:
             # Return only the specified attributes that exist in the instance
-            return {key: getattr(self, key)
-                     for key in attrs if hasattr(self, key)}
+            return {key: getattr(self, key) for key in attrs if hasattr(self, key)}

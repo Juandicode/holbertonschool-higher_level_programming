@@ -15,4 +15,10 @@ filename = "add_item.json"
 if path.exists(filename):
     my_list = load_from_json_file(filename)
 else:
-    my_list =
+    my_list = []
+
+# Añadir los argumentos del script a la lista
+my_list.extend(sys.argv[1:])
+
+# Guardar la lista actualizada en el archivo JSON
+save_to_json_file(my_list, filename)

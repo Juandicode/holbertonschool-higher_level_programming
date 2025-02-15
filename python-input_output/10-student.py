@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-    A class that defines a student by first_name, last_name, and age.
-    """
+A class that defines a student by first_name, last_name, and age.
+"""
 
 
 class Student:
@@ -41,4 +41,9 @@ class Student:
             }
         else:
             # Return only the specified attributes that exist in the instance
-            return {key: getattr(self, key) for key in attrs if hasattr(self, key)}
+            resultado = {}
+            for key in attrs:
+                if hasattr(self, key):
+                    resultado[key] = getattr(self, key)
+            return resultado
+        

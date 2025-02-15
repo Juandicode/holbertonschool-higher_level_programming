@@ -42,3 +42,4 @@ class Student:
             # Return only the specified attributes that exist in the instance
             return {key: getattr(self, key)
                      for key in attrs if hasattr(self, key)}
+        

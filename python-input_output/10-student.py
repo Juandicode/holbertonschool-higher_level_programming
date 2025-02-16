@@ -46,4 +46,3 @@ class Student:
                 if hasattr(self, key):
                     resultado[key] = getattr(self, key)
             return resultado
-        

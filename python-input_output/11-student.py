@@ -23,7 +23,11 @@ class Student:
                 'age': self.age
             }
         else:
-            return {key: getattr(self, key) for key in attrs if hasattr(self, key)}
+            return {
+                key: getattr(self, key)
+                for key in attrs
+                if hasattr(self, key)
+            }
 
     def reload_from_json(self, json):
         """

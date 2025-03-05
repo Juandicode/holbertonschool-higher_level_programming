@@ -1,0 +1,3 @@
+-- LIST ALL TABLES
+USE mysql
+SHOW TABLES;

@@ -1,3 +1,3 @@
 -- LIST ALL TABLES
 USE mysql
-SHOW TABLES;
+SHOW TABLES FROM mydatabase;

@@ -17,22 +17,22 @@ Imprime la información de todos los libros en la biblioteca y la información d
 """
 
 class Persona:
-    def __init__(self, nombre, edad):
+    def __init__(self, nombre, edad, peso):
         self.nombre = nombre
         self.edad = edad
-
+        self.peso = peso
+    
     def obtener_informacion(self):
-        return f"Nombre: {self.nombre}, Edad: {self.edad}"
+        return f"Nombre: {self.nombre}, Edad: {self.edad}, mi peso es {self.peso}"
 
 #eso es herncia, hereda 2 arributos y tiene uno propio de esta clase
 
 class Usuario(Persona):
-    def __init__(self, nombre, edad, numero_de_usuario):
-        super().__init__(nombre, edad)
+    def __init__(self, nombre, edad, peso, numero_de_usuario):
+        super().__init__(nombre, edad, peso)
         self.numero_de_usuario = numero_de_usuario
-
     def obtener_informacion(self):
-        return f"Nombre: {self.nombre}, Edad: {self.edad}nro de usuario es : {self.numero_de_usuario}"
+        return (f"Nombre: {self.nombre} Edad: {self.edad}, mi nro de usuario es : {self.numero_de_usuario} y peso {self.peso}  ")
 
 class Autor:
     def __init__(self, nombre, nacionalidad):
@@ -40,17 +40,17 @@ class Autor:
         self.nacionalidad = nacionalidad
 
     def obtener_informacion(self):
-        return f"mi nombre es : {self.nombre}, y mi nacionalidad es {self.nacionalidad}"
+        return f"{self.nombre} es el autor del libro su nacionalidad es {self.nacionalidad}"
 #esto es composicion de la clase libro con autor     
 
 class Libro:
-    def __init__(self, titulo, anio_publicacion, autor):
+    def __init__(self, titulo, año_publicacion, autor):
         self.titulo = titulo
-        self.anio_publicacion = anio_publicacion
+        self.año_publicacion = año_publicacion
         self.autor = autor
 
     def obtener_informacion(self):
-        return f"titulo del libro: {self.titulo}, año publicado {self.anio_publicacion} {self.autor.obtener_informacion()}"
+        return f"titulo del libro: {self.titulo}, año publicado {self.año_publicacion} {self.autor.obtener_informacion()}"
 
 class Biblioteca:
     def __init__(self, usuarios=[], libros=[]):
@@ -71,16 +71,24 @@ class Biblioteca:
             print(libro.titulo)
 
 
-#crear instancias , cuando son letas van con comillas y si son numeros no 
-autor1 = Autor("jhon lenon", "usa")
-autor = Autor("kiyosaki", "japon")
-libro = Libro("padre rico padre pobre", 2007, autor)
-libro2 = Libro("como hacerse riko", 2008, autor1)
-usuario1 = Usuario("juan", 22, 44200)
-usuario2 = Usuario("pedro", 23, 44450)
-biblioteca = Biblioteca([usuario1, usuario2],[libro, libro2])
+#crear instancias , cuando son letras van con comillas y si son numeros no 
 
-#print(libro.obtener_informacion())
-print(biblioteca.listar_libros())
+
+
+#autor1 = Autor("jhon lenon", "usa")
+#autor = Autor("kiyosaki", "japon")
+#libro = Libro("padre rico padre pobre", 2007, autor)
+#libro2 = Libro("como hacerse riko", 2008, autor1)
+#usuario1 = Usuario("juan", 22, 44200)
+#usuario2 = Usuario("pedro", 23, 44450)
+#biblioteca = Biblioteca([usuario1, usuario2],[libro, libro2])
+
+#persona45 = Persona ("juandi", 23, 70)
+usuario = Usuario ("juan", 23, 5500, 70)
+
+
+#print(persona45.obtener_informacion())
+print(usuario.obtener_informacion())
+#print(biblioteca.listar_libros())
 #print(biblioteca.agregar_usuarios(usuario1))
 #print(biblioteca.agregar_libros(libro2))

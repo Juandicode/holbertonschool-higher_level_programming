@@ -36,3 +36,8 @@ INSERT INTO states (name) VALUES
 ("Texas"), 
 ("New York"), 
 ("Nevada");
+
+SELECT * FROM states; para verificar que la tabla esta creada y que los datos estan cargados correctamente
+
+
+SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC ; para verificar que la funcion LIKE BINARY esta funcionando correctamente

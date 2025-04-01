@@ -41,3 +41,52 @@ SELECT * FROM states; para verificar que la tabla esta creada y que los datos es
 
 
 SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC ; para verificar que la funcion LIKE BINARY esta funcionando correctamente
+
+
+Para ver si tu base de datos hbtn_0e_4_usa contiene las tablas y datos especificados en el script que mencionas, sigue estos pasos:
+
+1. Verificar la existencia de la base de datos y tablas
+Inicia sesión en MySQL:
+
+
+mysql -u root -p
+Selecciona la base de datos hbtn_0e_4_usa:
+
+
+USE hbtn_0e_4_usa;
+Verifica si las tablas existen ejecutando el siguiente comando:
+
+
+SHOW TABLES;
+Esto debe mostrarte al menos las tablas states y cities.
+
+2. Verificar la estructura de las tablas
+Para asegurarte de que las tablas states y cities tienen la estructura correcta (según tu script), puedes usar el comando DESCRIBE para cada tabla:
+
+Para la tabla states:
+
+
+DESCRIBE states;
+Deberías ver algo como esto:
+
+
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| id    | int(11)     | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(256)| NO   |     | NULL    |                |
++-------+-------------+------+-----+---------+----------------+
+Para la tabla cities:
+
+
+DESCRIBE cities;
+Esto debería mostrar algo como esto:
+
+
++---------+-------------+------+-----+---------+----------------+
+| Field   | Type        | Null | Key | Default | Extra          |
++---------+-------------+------+-----+---------+----------------+
+| id      | int(11)     | NO   | PRI | NULL    | auto_increment |
+| state_id| int(11)     | NO   | MUL | NULL    |                |
+| name    | varchar(256)| NO   |     | NULL    |                |
++---------+-------------+------+-----+---------+----------------+

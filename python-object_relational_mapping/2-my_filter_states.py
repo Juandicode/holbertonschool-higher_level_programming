@@ -12,8 +12,10 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     # Usamos format para crear la consulta con el valor de argv[4]
-    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(argv[4])
-
+    query = (
+        "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC"
+        .format(argv[4])
+    )
     cursor.execute(query)  # Ejecutamos la consulta
     rows = cursor.fetchall()
     for row in rows:

@@ -1,6 +1,6 @@
  para entrar a MySQL con tu usuario y contraseña
  mysql -u root -p
-
+usuario Juandicode contraseña Veronic1
 una vez dentro de MySQL,  creo la database con el comando CREATE, ej:
 CREATE DATABASE hbtn_0e_0_usa;
 
@@ -20,4 +20,19 @@ deberia aparecer
 para verificar que la database esta seleccionada 
 USE hbtn_0e_0_usa;
 
+despues d easegurarme que estoy trabajando en la database correcta, creo la tabla STATES, que es la que me pasaron en le ejercicio 
 
+-- Create states table in hbtn_0e_0_usa with some data
+CREATE DATABASE IF NOT EXISTS hbtn_0e_0_usa;
+USE hbtn_0e_0_usa;
+CREATE TABLE IF NOT EXISTS states ( 
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(256) NOT NULL,
+    PRIMARY KEY (id)
+);
+INSERT INTO states (name) VALUES 
+("California"), 
+("Arizona"), 
+("Texas"), 
+("New York"), 
+("Nevada");

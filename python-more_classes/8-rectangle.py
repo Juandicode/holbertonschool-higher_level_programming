@@ -74,7 +74,7 @@ class Rectangle:
         """Return the string representation of the Rectangle."""
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
-    @staticmethod
+    @staticmethod #metodo statico que retorna el rectangulo mas gde
     def bigger_or_equal(rect_1, rect_2):
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")

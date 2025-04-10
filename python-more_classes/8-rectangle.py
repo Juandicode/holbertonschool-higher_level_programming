@@ -87,3 +87,8 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return rect_1
         return rect_2
+
+    def __del__(self):
+        """Print a message when a Rectangle is deleted ."""
+        type(self).number_of_instances -= 1
+        print("Bye rectangle...")

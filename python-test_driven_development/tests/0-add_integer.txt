@@ -1,4 +1,4 @@
->>> from _0_add_integer import add_integer
+>>> from 0_add_integer import add_integer
 
 >>> add_integer(1, 2)
 3

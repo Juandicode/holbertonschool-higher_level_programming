@@ -5,6 +5,9 @@ It divides all elements of a matrix by a given number.
 """
 
 def matrix_divided(matrix, div):
+"""
+    Divides all elements of a matrix by a number.
+"""
     if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     

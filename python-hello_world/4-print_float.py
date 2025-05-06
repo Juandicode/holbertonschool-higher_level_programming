@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-number = 98
-# YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
-print(str(number)[:4])
+number = 3.14159
+print(f"{number:.2f}")  # Para mostrar 3 decimales → 3.142

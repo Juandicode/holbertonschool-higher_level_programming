@@ -7,5 +7,5 @@ def print_matrix_integer(matrix=[[]]):
             formateado_row.append(numero_formateado)
         print(" ".join(formateado_row))
 
-# "{:d}".format(i) esto convierte cada 
+# "{:d}".format(i) esto convierte cada
 # numero enter en una cadena con formato decimal ej: 1 -> "1" , 2 -> "2"

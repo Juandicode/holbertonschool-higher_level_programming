@@ -1,0 +1,39 @@
+Test Case 1:
+Input: 4
+Expected Output:
+####
+####
+####
+####
+
+Test Case 2:
+Input: 10
+Expected Output:
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+Test Case 3:
+Input: 0
+Expected Output:
+(No output, empty square)
+
+Test Case 4:
+Input: 1
+Expected Output:
+#
+
+Test Case 5:
+Input: -1
+Expected Error: ValueError with message "size must be >= 0"
+
+Test Case 6:
+Input: 2.5 (float)
+Expected Error: TypeError with message "size must be an integer

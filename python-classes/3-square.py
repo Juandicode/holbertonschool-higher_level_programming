@@ -19,4 +19,3 @@ class Square:
     def area(self):
         """ devuelve el area del cuadrado."""
         return self.__size ** 2
-    

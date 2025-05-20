@@ -5,7 +5,7 @@
 class Square:
     """la class square define un cuadrado."""
 
-    def __init__(self, size=0, lado=0):
+    def __init__(self, size=0):
         """inicializo un cuadrado con un tamaño.
 
         Args:
@@ -15,5 +15,6 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
     def area(self, lado):
-        return lado ** 2
-        self.__size = size
+        """ devuelve el area del cuadrado."""
+        return self.__size ** 2
+    

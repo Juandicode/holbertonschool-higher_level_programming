@@ -11,7 +11,7 @@ class Square:
         Args:
             size: el tamaño de la clase."""
         if not isinstance(size, int):
-            raise TypeError("el tamaño tiene que ser un integer")
+            raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
 

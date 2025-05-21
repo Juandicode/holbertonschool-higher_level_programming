@@ -11,13 +11,12 @@ class Square:
         Args:
             size: el tamaño de la clase."""
         self.size = size
-        
-        
+
     @property
     def size(self):
         """getter del tamaño."""
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """Setter para establecer el tamaño del cuadrado con validaciones."""

@@ -31,7 +31,7 @@ class Square:
         """imprime el cuadrado."""
         if self.size == 0:
             print()
-            for i in range(self.size):
-                for a in range(self.size):
-                    print("#", end="")
+        for i in range(self.size):
+            for a in range(self.size):
+                print("#", end="")
             print()

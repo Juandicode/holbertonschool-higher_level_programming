@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""modulo q define la clase cuaudrado.""" 
+"""modulo q define la clase cuaudrado."""
 
 
 class Square:
     """la class square define un cuadrado."""
-    
+
     def __init__(self, size=0):
         """inicializo un cuadrado"""
         self.size = size

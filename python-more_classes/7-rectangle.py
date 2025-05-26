@@ -12,8 +12,8 @@ class Rectangle:
         """Initialize a new Rectangle.
 
         Args:
-            width (int): The width of the rectangle.
-            height (int): The height of the rectangle.
+            width (int): The ancho del rectangle.
+            height (int): The slto del rectangle.
         """
         type(self).number_of_instances += 1
         self.width = width

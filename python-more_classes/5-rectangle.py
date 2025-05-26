@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Definoo un rectangulo con un mensaje de eliminacion."""
+"""Defines a Rectangle class with deletion message."""
 
 
 class Rectangle:
@@ -17,7 +17,7 @@ class Rectangle:
 
     @property #decorador para acceder a metodos como si fueran atributos
     def width(self):
-        """Get/set el ancho del Rectangle."""
+        """Get/set the width of the Rectangle."""
         return self.__width
 
     @width.setter

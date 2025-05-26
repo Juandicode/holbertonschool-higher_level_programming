@@ -15,7 +15,7 @@ class Rectangle:
         self.width = width
         self.height = height
 
-    @property #decorador para acceder a metodos como si fueran atributos
+    @property  # decorador para acceder a metodos como si fueran atributos
     def width(self):
         """Get/set the width of the Rectangle."""
         return self.__width
@@ -63,7 +63,7 @@ class Rectangle:
         for i in range(self.__height):
             rect.append("#" * self.__width)
             if i != self.__height - 1:          # if i no es la ultima linea
-                rect.append("\n") # agregaun salto de linea
+                rect.append("\n")  # agregaun salto de linea
         return "".join(rect)
 
     def __repr__(self):

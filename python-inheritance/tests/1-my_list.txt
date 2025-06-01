@@ -1,10 +1,11 @@
 >>> import os, importlib.util
->>> file_path = os.path.join(os.getcwd(), 'my_list_1_7.py')
+>>> file_path = os.path.join(os.getcwd(), '1-my_list.py')
 >>> spec = importlib.util.spec_from_file_location("my_list", file_path)
 >>> module = importlib.util.module_from_spec(spec)
 >>> spec.loader.exec_module(module)
 >>> MyList = module.MyList
 
+# Caso original
 >>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list.append(4)
@@ -18,6 +19,7 @@
 >>> print(my_list)
 [1, 4, 2, 3, 5]
 
+# Caso con valores negativos
 >>> other = MyList()
 >>> other.append(-10)
 >>> other.append(3)
@@ -30,6 +32,7 @@
 >>> print(other)
 [-10, 3, 0, -1]
 
+# Caso: lista vacía
 >>> empty = MyList()
 >>> print(empty)
 []

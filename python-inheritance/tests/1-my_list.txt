@@ -1,4 +1,10 @@
->>> from my_list import MyList
+>>> import os, importlib.util
+>>> file_path = os.path.join(os.getcwd(), '1-my_list.py')
+>>> spec = importlib.util.spec_from_file_location("my_list", file_path)
+>>> module = importlib.util.module_from_spec(spec)
+>>> spec.loader.exec_module(module)
+>>> MyList = module.MyList
+
 >>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list.append(4)

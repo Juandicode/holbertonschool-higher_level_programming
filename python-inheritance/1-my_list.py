@@ -3,6 +3,7 @@
 Muodulo pa clase mylist.
 """
 
+
 class MyList(list):
     """
    clase mylist hereda d list.

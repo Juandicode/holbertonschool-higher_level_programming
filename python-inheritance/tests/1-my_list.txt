@@ -5,6 +5,7 @@
 >>> spec.loader.exec_module(module)
 >>> MyList = module.MyList
 
+# Caso original
 >>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list.append(4)
@@ -17,3 +18,16 @@
 [1, 2, 3, 4, 5]
 >>> print(my_list)
 [1, 4, 2, 3, 5]
+
+# Nuevo caso: lista con valores negativos y desordenada
+>>> other = MyList()
+>>> other.append(-10)
+>>> other.append(3)
+>>> other.append(0)
+>>> other.append(-1)
+>>> print(other)
+[-10, 3, 0, -1]
+>>> other.print_sorted()
+[-10, -1, 0, 3]
+>>> print(other)
+[-10, 3, 0, -1]

@@ -2,4 +2,4 @@
 SELECT
     *
 FROM
-    tables;
+    hbtn_0c_0.tables;

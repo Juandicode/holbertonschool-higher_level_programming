@@ -18,7 +18,10 @@ if __name__ == "__main__":
     session = Session()
 
     # Buscar y eliminar los estados con 'a'
-    states_to_delete = session.query(State).filter(State.name.like('%a%')).all()
-    for state in states_to_delete:
-        session.delete(state)
+    states_to_delete = (
+    session.query(State)
+    .filter(State.name.like('%a%'))
+    .all()
+)
+    session.delete(state)
     session.commit()

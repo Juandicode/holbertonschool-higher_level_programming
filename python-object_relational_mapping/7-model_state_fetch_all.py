@@ -15,7 +15,7 @@ if __name__ == "__main__":
         pool_pre_ping=True
     )
 
-    # Crear sesión
+    # Crear sesiónn
     Session = sessionmaker(bind=engine)
     session = Session()
 

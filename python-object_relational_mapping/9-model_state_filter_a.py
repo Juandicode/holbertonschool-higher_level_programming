@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists all State objects that contain the letter 'a' from the database"""
+"""Listeo all State objects that contain the letter 'a' from the database"""
 
 import sys
 from sqlalchemy import create_engine

@@ -1,16 +1,13 @@
 #!/usr/bin/python3
-"""Definition of the State class and Base instance"""
+"""Definicion  of the City class"""
 
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String, ForeignKey
+from model_state import Base
 
-# Create Base instance
-Base = declarative_base()
-
-
-class State(Base):
-    """Class representing the states table"""
-    __tablename__ = 'states'
+class City(Base):
+    """City class linked to MySQL table 'cities'"""
+    __tablename__ = 'cities'
 
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
+    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
